@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8' standalone='no'?>
+
+<parque
+xmlns='http://www.iescierva.net'
+xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+xsi:schemaLocation='http://www.iescierva.net xsd/xsd-parque.xsd'>
+
+	<estanque superficie='115m' profundidad='4m'/>
+			
+		<animal fechaEntrada='2007-08-09' especie='tortuga'/>
+			
+ 	<vial tipoCalzada='Calle' longitud='1000m'/>
+	
+	<mobiliario fechaCompra='2008-05-09' proveedor='Copele' tipoMobiliario='silla'/>
+	
+</parque>

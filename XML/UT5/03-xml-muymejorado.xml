@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding='utf-8'?>
+   
+   <discografía_tool>
+        <lp identificador='01'> <!--como forma atributo -->
+            <título>Opiate</título>
+            <año>1992</año>
+            <fecha> <!--no puede ser atributo por que es un objeto compuesto -->
+            	<dia></dia>
+            	<mes></mes>
+            	<año></año>
+           	</fecha>
+            <discográfica>Zoo/BMG/Volcano</discográfica>
+            <temas>
+                <tema>Sweat</tema> <!--tema no puede ser atributo, ya que se repite -->               
+            </temas>
+        </lp>
+        <lp>
+        <identificador>02</identificador> <!-- como forma elemento -->
+            <título>Undertow</título>
+            <año>1993</año>
+            <discográfica>Zoo/BMG/Volcano</discográfica>
+            <temas>
+                <tema>Intolerance</tema>               
+            </temas>
+        </lp>
+        <ccc> <!-- representacion de numero de cuenta bancaria  -->
+        	<entidad>1234</entidad>
+        	<oficina>2345</oficina>
+        	<dc>84</dc>
+        	<cuenta>1245789658</cuenta>
+        </ccc> <!--  o se podria poner -->
+        <ccc entidad='1234' oficina='2345' dc='84' cuenta='1245789658'></ccc>  <!-- ó -->
+        <ccc entidad='1234' oficina='2345' dc='84'>
+            1245789658</ccc> <!-- esto no estría bien ya que no es un ccc sino un trozo de ccc,procurar que represente lo que se quiere -->
+        <nif>
+        	<numero>236547895</numero>
+        	<letra>x</letra>        
+        </nif>    
+        <nif número='12547895' letra='x'/>
+        <nif>12354788x</nif> <!-- es correcto semanticamente -->
+        <nif numero='12354788x'></nif> <!--no es correcto semanticamente ya que tiene letra-->
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </discografía_tool>

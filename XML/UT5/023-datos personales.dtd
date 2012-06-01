@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+
+<!ELEMENT listado (datos+)>
+<!ELEMENT datos (nombre+, dirección?, (móvil|email)*)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT dirección (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT móvil (#PCDATA)>
+
+<!ENTITY ra "Raúl Leal">
+

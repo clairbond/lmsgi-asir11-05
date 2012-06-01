@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<!ELEMENT ordenadores (hardware*, software+)>
+
+<!ELEMENT hardware (placa_base,cpu,pci,ram,ventiladores,unidad_cd)>
+<!ELEMENT placa_base (#PCDATA)>
+<!ELEMENT cpu (#PCDATA)>
+<!ATTLIST cpu  
+	frecuencia CDATA #REQUIRED
+	numero_nucleos CDATA #REQUIRED
+>
+<!ELEMENT pci (tarjeta_red,tarjeta_grafica,tarjeta_sonido)>
+<!ELEMENT tarjeta_red (#PCDATA)>
+<!ATTLIST tarjeta_red 
+	fabricante CDATA #REQUIRED
+	modelo CDATA #REQUIRED
+>
+<!ELEMENT tarjeta_grafica (#PCDATA)>
+<!ATTLIST tarjeta_grafica 
+	fabricante CDATA #REQUIRED
+	modelo CDATA #REQUIRED
+>
+<!ELEMENT tarjeta_sonido (#PCDATA)>
+<!ATTLIST tarjeta_sonido 
+	fabricante CDATA #REQUIRED
+	modelo CDATA #REQUIRED
+>
+<!ELEMENT ram (#PCDATA)>
+<!ATTLIST ram
+	numero_ranuras CDATA #REQUIRED
+	tipo CDATA #REQUIRED
+	tamaño_modulos CDATA #REQUIRED
+>
+<!ELEMENT ventiladores (#PCDATA)>
+<!ATTLIST ventiladores
+	numero_ventiladores CDATA #REQUIRED
+>

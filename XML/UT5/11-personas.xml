@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8' standalone='no'?>
+
+<personas
+xmlns='http://www.iescierva.net'
+xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+xsi:schemaLocation='http://www.iescierva.net xsd/xsd-personas.xsd'>
+
+	<persona>
+		<nombre>Luis</nombre>
+		<apellidos>Hernández  Martínez</apellidos>
+		<fnac>2000-01-03</fnac>
+		<email>luis@gmail.com</email>
+	</persona>
+	
+ 	<persona>
+		<nombre>Ginés</nombre>
+		<apellidos>García García</apellidos>
+		<fnac>1980-03-09</fnac>
+		<email>ggg@gmail.com</email>
+	</persona>
+	
+	<persona>
+		<nombre>Pepe</nombre>
+		<apellidos>Nieto Suarez</apellidos>
+		<fnac>1990-04-03</fnac>
+		<email>pepe@gmail.com</email>
+	</persona> 
+
+
+</personas>

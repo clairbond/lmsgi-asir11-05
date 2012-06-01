@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8' standalone='no'?>
+
+<!DOCTYPE parque SYSTEM 'dtd/parque.dtd'>
+
+<parque>
+
+	<estanque superficie='115' profundidad='4'/>
+			
+		<animal fechaEntrada='2007-08-09' especie='tortuga'/>
+			
+ 	<vial tipoCalzada='calle' longitud='1000'/>
+	
+	<mobiliario fechaCompra='2008-05-09' proveedor='Copele' tipoMobiliario='silla'/>
+
+
+</parque>

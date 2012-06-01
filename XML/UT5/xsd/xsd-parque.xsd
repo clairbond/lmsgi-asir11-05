@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<xs:schema xmlns:xs='http://www.w3.org/2001/XMLSchema'
+targetNamespace='http://www.iescierva.net'
+xmlns='http://www.iescierva.net' elementFormDefault="qualified">
+
+<xs:element name='parque'>
+	<xs:complexType>
+    	<xs:sequence>
+			<xs:element name='estanque' minOccurs='1' maxOccurs='unbounded'>
+  				<xs:complexType>
+    				<xs:sequence>
+    				</xs:sequence>
+    				<xs:attribute name='superficie' type='xs:string'/>
+					<xs:attribute name='profundidad' type='xs:string'/>	   
+    				</xs:complexType>	
+    		</xs:element>
+    					
+							<xs:element name='animal' minOccurs='1' maxOccurs='unbounded'>
+								<xs:complexType>
+    								<xs:sequence>							
+      								</xs:sequence>
+      									<xs:attribute name='fechaEntrada' type='xs:string'/>
+										<xs:attribute name='especie' type='xs:string'/>	    							
+    							</xs:complexType>	
+    						</xs:element>
+    		<xs:element name='vial' minOccurs='1' maxOccurs='unbounded'>
+  				<xs:complexType>
+    				<xs:sequence>
+    				</xs:sequence>
+						<xs:attribute name='tipoCalzada' type='xs:string'/>
+						<xs:attribute name='longitud' type='xs:string'/>	    		
+				</xs:complexType>    		
+    		</xs:element>
+    		
+    		<xs:element name='mobiliario' minOccurs='1' maxOccurs='unbounded'>
+  				<xs:complexType>
+    				<xs:sequence>
+    				</xs:sequence>
+					<xs:attribute name='fechaCompra' type='xs:string'></xs:attribute>
+					<xs:attribute name='proveedor' type='xs:string'></xs:attribute>
+					<xs:attribute name='tipoMobiliario' type='xs:string'></xs:attribute>
+  				</xs:complexType>					
+    		</xs:element>
+		</xs:sequence>
+  	</xs:complexType>		
+</xs:element>
+
+</xs:schema> 

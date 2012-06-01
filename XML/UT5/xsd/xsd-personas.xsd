@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<xs:schema xmlns:xs='http://www.w3.org/2001/XMLSchema'
+targetNamespace='http://www.iescierva.net'
+xmlns='http://www.iescierva.net' elementFormDefault="qualified">
+
+<xs:element name='personas'>
+	<xs:complexType>
+    	<xs:sequence>
+			<xs:element name='persona' minOccurs='1' maxOccurs='unbounded'>
+  				<xs:complexType>
+    				<xs:sequence>
+    					<xs:element name='nombre'>
+    						<xs:simpleType>
+    							<xs:restriction base='xs:string'>
+									<xs:pattern value='[a-zA-ZáéíóúÁÉÍÓÚüÜçÇ ]{1,20}'/>    		
+    							</xs:restriction>
+ 	   						</xs:simpleType>   	
+    					</xs:element>
+    		
+						<xs:element name='apellidos'>
+							<xs:simpleType>
+    							<xs:restriction base='xs:string'>
+									<xs:pattern value='[a-zA-ZáéíóúÁÉÍÓÚüÜçÇ -]{1,20}'/>    		
+    							</xs:restriction>
+    						</xs:simpleType>   	
+    					</xs:element>
+		
+      					<xs:element name='fnac'>
+							<xs:simpleType>
+    							<xs:restriction base='xs:date'>
+									<xs:pattern value='[0-9]{1,4}-[0-9]{1,2}-[0-9]{1,2}'/>    		
+    							</xs:restriction>
+    						</xs:simpleType>   	
+    					</xs:element>
+      	
+      					<xs:element name='email'>
+							<xs:simpleType>
+    							<xs:restriction base='xs:string'>
+									<xs:pattern value='[a-zA-Z._][a-zA-Z._0-9]*\@[a-zA-Z0-9][a-zA-Z0-0.-]*'/>    		
+    							</xs:restriction>
+    						</xs:simpleType>   	
+    					</xs:element>
+    	
+    				</xs:sequence>
+  				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+  	</xs:complexType>		
+</xs:element>
+
+</xs:schema> 
